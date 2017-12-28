@@ -11,11 +11,14 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import json
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open('settings.json', 'r') as f:
+with open(os.path.join(PROJECT_DIR, 'settings.json'), 'r') as f:
     user_settings = json.load(f)
 
 # Quick-start development settings - unsuitable for production
@@ -80,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'imadmca',
         'USER': user_settings['user'],
-        'PASSWORD': user_settings['password']
+        'PASSWORD': user_settings['password'],
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
