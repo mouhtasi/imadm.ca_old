@@ -34,6 +34,19 @@ h3 {
     font-size: 2em;
 }
 
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+dd, dt {
+    line-height: 1.42857143
+}
+
 .home-menu {
     padding: 0.5em 4em 0.5em 4em;
     text-align: center;
@@ -114,7 +127,7 @@ h3 {
 }
 
 .body-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /*
