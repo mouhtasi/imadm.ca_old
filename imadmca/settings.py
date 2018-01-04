@@ -28,7 +28,7 @@ with open(os.path.join(PROJECT_DIR, 'settings.json'), 'r') as f:
 SECRET_KEY = user_settings['secret']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -128,3 +128,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
