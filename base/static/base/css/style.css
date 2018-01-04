@@ -9,8 +9,9 @@ a:link {
 }
 
 body {
-    line-height: 1.4em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
+    line-height: 1.5em;
     color: #333;
 }
 
@@ -45,6 +46,15 @@ dd {
 
 dd, dt {
     line-height: 1.42857143
+}
+
+.experience_list {
+    list-style: none;
+    padding-left:0;
+}
+
+.experience_list li {
+    margin-bottom: 10px;
 }
 
 .home-menu {
