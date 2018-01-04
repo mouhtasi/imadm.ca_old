@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Imad Mouhtassem</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/pure-min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/grids-responsive-min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/fontawesome-all.min.css' %}" />
+</head>
+
+<body>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="{% url 'index' %}">Imad Mouhtassem</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="{% url 'index' %}" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="https://imadm.ca/blog" class="pure-menu-link">Blog</a></li>
+            <li class="pure-menu-item"><a href="https://imadm.ca/resume.pdf" class="pure-menu-link">Resume</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="buffer"></div>
+
+<div class="content-wrapper shaded">
+    <div class="content">
+        <div class="pure-g">
+            <div class="l-box pure-u-1">
+                <h2>Contact</h2>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <h3>Email</h3>
+                <p>imad (-at-) imadm.ca</p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/mouhtasi">Github Profile</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
