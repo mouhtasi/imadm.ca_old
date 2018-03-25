@@ -58,7 +58,7 @@ dd, dt {
 }
 
 .home-menu {
-    padding: 0.5em 4em 0.5em 4em;
+    padding: 0.5em 4em 0.5em 0em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     background: #f8f8f8;
@@ -165,7 +165,8 @@ dd, dt {
     }
 
     .home-menu ul {
-        float: right;
+        position: absolute;
+        right: 0;
     }
 
     /* We decrease the width of the .splash, since we have more width
